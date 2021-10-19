@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import socket, sys, signal, threading, time
+import socket, sys, signal, time
 
 if len(sys.argv) != 2:
 	print(f"\nUsage: python3 {sys.argv[0]} <port>")
