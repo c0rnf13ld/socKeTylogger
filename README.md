@@ -6,7 +6,11 @@ This script is a simple keylogger, that by means of sockets, sends the pressed k
 
 ## More about the script
 The keylogger when executed automatically installs the **pynput** library on the victim machine, so there is no need to depend on the victim having the pynput library installed.
-The **autoChange.sh** script plays with base64 to generate a file in python3 that generates another keylogger, this is functional when we make a change in the keylogger, but the real utility of this script called **autoChange.sh** is that the file it generates, called **keyloggerGenerator.py**, allows us to generate several keyloggers to operate with another ip and port if we want to
+
+
+The **autoChange.sh** script plays with base64 to generate a file in python3 that generates another keylogger, this is functional when we make a change in the keylogger, but the real utility of this script called **autoChange.sh** is that the file it generates, called **keyloggerGenerator.py**, allows us to generate several keyloggers to operate with another ip and port if we want to.
+
+
 The keylogger.py file has a variable called ending_key, this variable is responsible for stopping the server when the key combination **CTRL + SHIFT + ESC** is detected. You can also modify the keyboard combination, so that when key combination is detected the keylogger stops.
 ## Requirements:
 ```
